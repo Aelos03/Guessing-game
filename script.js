@@ -38,12 +38,12 @@ document.querySelector('.check').addEventListener('click', function () {
     //when guess is wrong
   } else if (guess !== rng) {
     if (score > 1) {
-      displayMessage(guess > rng ? 'Too high!' : 'too low!');
+      displayMessage(guess > rng ? '📈 Too high!' : '📉 too low!');
       guess > rng ? 'Too high!' : 'too low!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      displayMessage('You lost the game!');
+      displayMessage('💥 You lost the game!');
 
       document.querySelector('body').style.backgroundColor = '#f53333';
       document.querySelector('.number').textContent = rng;
